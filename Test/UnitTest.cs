@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SampleApplication;
+using Xunit;
 
 namespace Test
 {
-    [TestClass]
     public class UnitTest
     {
-        [TestMethod]
+        [Fact]
         public void Test1()
         {
             var target = new ViewModel();
@@ -23,18 +22,20 @@ namespace Test
             target.Property1 = 3;
             target.Property2 = "Test";
 
-            Assert.AreEqual(2, events.Count);
-            Assert.AreEqual("Property1", events[0]);
-            Assert.AreEqual("Property2", events[1]);
+            Assert.Equal(2, events.Count);
+            Assert.Equal("Property1", events[0]);
+            Assert.Equal("Property2", events[1]);
         }
 
-        [TestMethod]
-        [ExpectedException(typeof(ArgumentNullException))]
+        [Fact]
         public void Test2()
         {
             var target = new ViewModel();
 
-            target.Property2 = null;
+            Assert.Throws<ArgumentNullException>(() =>
+            {
+                return target.Property2 = null;
+            });
         }
     }
 }
