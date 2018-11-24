@@ -1,6 +1,0 @@
-version: 1.0.{build}
-image: Visual Studio 2013
-install:
-- cmd: nuget restore
-build:
-  verbosity: minimal
