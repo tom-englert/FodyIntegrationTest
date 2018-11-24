@@ -116,7 +116,7 @@
     <Error Condition="!Exists('..\packages\PropertyChanged2.Fody.2.5.13\build\PropertyChanged2.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\PropertyChanged2.Fody.2.5.13\build\PropertyChanged2.Fody.props'))" />
     <Error Condition="!Exists('..\packages\NullGuard.Fody.1.8.5\build\NullGuard.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NullGuard.Fody.1.8.5\build\NullGuard.Fody.props'))" />
   </Target>
-  <Import Project="..\packages\Fody.3.3.1\build\Fody.targets" Condition="Exists('..\packages\Fody.3.3.1\build\Fody.targets')" />
+  <Import Project="..\packages\Fody.3.3.0\build\Fody.targets" Condition="Exists('..\packages\Fody.3.3.0\build\Fody.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
