@@ -14,7 +14,7 @@ steps:
   inputs:
     buildType: specific
     project: '75bf84d2-d359-404a-a712-07c9f693f635'
-    pipeline: 22
+    pipeline: 23
     specificBuildWithTriggering: true
     artifactName: Nuget
     downloadPath: .
