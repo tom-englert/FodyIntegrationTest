@@ -34,7 +34,7 @@ steps:
   displayName: 'NuGet update'
   inputs:
     command: custom
-    arguments: 'update FodyIntegrationTest.sln'
+    arguments: 'update -Prerelease FodyIntegrationTest.sln'
 
 
 - task: VSBuild@1
