@@ -108,6 +108,11 @@
       <SubType>Designer</SubType>
     </Resource>
   </ItemGroup>
+  <Target Name="BypassFodyVSVersionCheck" BeforeTargets="FodyTarget">
+    <PropertyGroup>
+      <MsBuildMajorVersion>16</MsBuildMajorVersion>
+    </PropertyGroup>
+  </Target>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
