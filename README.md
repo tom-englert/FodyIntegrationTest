@@ -1,6 +1,5 @@
-# FodyIntegrationTest
-A test application to verify compatibility with different Visual Studio versions.
+# PackageIntegrationTest
+A test application to verify compatibility with different Visual Studio versions or cross-platform builds
 
-Compatibility test builds:
-
-- Visual Studio 2017: [![Build Status](https://dev.azure.com/tom-englert/Open%20Source/_apis/build/status/FodyIntegration2017)](https://dev.azure.com/tom-englert/Open%20Source/_build/latest?definitionId=28)
+- download the fody nuget package to test into the ./nuget folder (must have a higher version than the latest release on nuget.org!)
+- build & test
