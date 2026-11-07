@@ -2,7 +2,7 @@
     <PropertyGroup>
         <Version>1.0.0</Version>
     </PropertyGroup>
-    <Target Name="BeforeBuild" BeforeTargets="Build">
+    <Target Name="BeforeBuild" BeforeTargets="PrepareForBuild">
         <Message Text="Integration test build: $(Version)" Importance="high" />
     </Target>
 </Project>
